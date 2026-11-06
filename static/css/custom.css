@@ -1,0 +1,1350 @@
+/*************************************************************************
+ * Your custom CSS file
+ *************************************************************************/
+
+.feature img {
+  width: 90px;
+  height: 90px;
+  display: block;
+  margin: 0 auto;
+}
+
+.feature h2 {
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.feature p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.feature h2{
+  color: rgb(120, 218, 251);
+  line-height: 30px;
+  text-align: center;
+}
+
+.featurecard-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjust the spacing between the boxes */
+  align-items: flex-start; /* Align the tops of the features if they have different heights */
+  gap: 20px; /* Space between the features */
+  padding: 20px; /* Padding around the entire features container */
+}
+
+
+
+.feature {
+  margin-bottom: 20px; /* Space between rows of features */
+  /* Additional styles for the feature boxes */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  flex: 0 0 calc(50% - 20px); /* 减去的20px代表两个项目之间总共的间距 */
+  margin: 1px; /* 为了使项目之间有间距，并在容器的宽度中居中显示 */
+  box-sizing: border-box; /* 确保内边距和边框包含在宽度计算内 */
+  padding: 25px; /* 项目内的填充 */
+  border-radius: 10px; /* 边角的圆角半径 */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+  background-color: #fff; /* 背景颜色 */
+  border: 1px solid #e6e6e6; /* 边框 */
+  text-align: center; /* 文本居中对齐 */
+  cursor: pointer; /* 如果你希望整个卡片可点击 */
+  transition: box-shadow 0.3s ease, max-height 0.7s ease; /* 过渡效果 */
+}
+
+.feature_1x1 {
+  margin-bottom: 20px; /* Space between rows of features */
+  /* Additional styles for the feature boxes */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  flex: 0 0 calc(95% - 20px); /* 减去的20px代表两个项目之间总共的间距 */
+  margin: 1px; /* 为了使项目之间有间距，并在容器的宽度中居中显示 */
+  box-sizing: border-box; /* 确保内边距和边框包含在宽度计算内 */
+  padding: 25px; /* 项目内的填充 */
+  border-radius: 10px; /* 边角的圆角半径 */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+  background-color: #fff; /* 背景颜色 */
+  border: 1px solid #e6e6e6; /* 边框 */
+  text-align: center; /* 文本居中对齐 */
+  cursor: pointer; /* 如果你希望整个卡片可点击 */
+  transition: box-shadow 0.3s ease, max-height 0.7s ease; /* 过渡效果 */
+}
+
+.featurecard{
+  background-color:rgb(120, 218, 251);
+  border-radius: 10px; /* 所有角都会有10像素的圆角 */
+  position: relative;
+
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+
+
+  padding: 10px auto;
+
+  justify-content: center; /* 水平居中内容 */
+  align-items: center; /* 垂直居中内容 */
+  text-align: center; /* 确保文本在块级元素中居中对齐 */
+}
+.featurecard h2 {
+  width: 100%; /* 确保占满整个容器宽度 */
+  color: white; /* 文本颜色设置为白色 */
+  margin: 0 ; /* 移除默认的外边距 */
+  font-size: 22px;
+  padding: 0;
+  line-height: 3.0;
+}
+
+
+
+.feature:hover {
+  box-shadow: 0 8px 16px -2px rgba(0, 0, 0, 0.5);
+}
+
+.feature img {
+  max-width: 100px; /* Adjust as needed */
+  height: auto;
+  margin-top: 20px;
+}
+
+.feature:hover .description {
+  max-height: 2000px; /* Adjust as needed */
+  padding: 20px;
+}
+
+.feature_1x1:hover {
+  box-shadow: 0 8px 16px -2px rgba(0, 0, 0, 0.5);
+}
+
+.feature_1x1 img {
+  max-width: 100px; /* Adjust as needed */
+  height: auto;
+  margin-top: 20px;
+}
+
+.feature_1x1:hover .description {
+  max-height: 2000px; /* Adjust as needed */
+  padding: 20px;
+}
+
+
+.toggle {
+  display: none;
+}
+
+.toggle-label {
+  background-color: #65a7e8;
+  color: white;
+  padding: 10px 20px;
+  margin: 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.toggle-label::after {
+  content: '▼';
+  float: right;
+  transition: transform 0.3s ease;
+}
+
+.toggle:checked + .toggle-label::after {
+  transform: rotate(180deg);
+}
+
+.description {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.7s ease, padding 0.7s ease;
+  background-color: #fff;
+  padding: 0 20px;
+  text-align: left;
+  font-size: 20px; /* This is an example, set the font size you prefer */
+}
+
+/* Additional styles to ensure consistency in font size */
+.description p,
+.description li {
+  text-align: left;
+  font-size: 20px; /* This should match the font-size defined for .description */
+}
+
+
+/* =========================================
+   AnimWeb-Bench Overview Introduction
+   ========================================= */
+
+.overview-intro {
+  max-width: 850px;
+  margin: 35px auto 10px;
+  text-align: center;
+}
+
+/* Research Question */
+.overview-question {
+  font-size: 1.35rem;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.7;
+  color: #363636;
+  margin-bottom: 22px;
+
+  opacity: 0;
+  animation: overviewFadeIn 1.5s ease-out 0.3s forwards;
+}
+
+/* Benchmark Introduction */
+.overview-answer {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4a4a4a;
+
+  opacity: 0;
+  animation: overviewFadeIn 1.5s ease-out 1.0s forwards;
+}
+
+/* Benchmark Name: Bold Only */
+.overview-answer strong {
+  font-weight: 700;
+  color: inherit;
+}
+
+/* Fade-in + Slide-up Animation */
+@keyframes overviewFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .overview-intro {
+    margin-top: 25px;
+    padding: 0 10px;
+  }
+
+  .overview-question {
+    font-size: 1.15rem;
+  }
+
+  .overview-answer {
+    font-size: 1rem;
+  }
+}
+
+/* Reduced Motion Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .overview-question,
+  .overview-answer {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+
+
+/* =========================================
+   AnimWeb-Bench Dataset Statistics
+   ========================================= */
+
+
+/* Two-column Layout */
+
+.dataset-overview-columns {
+  margin-top: 30px;
+  margin-bottom: 35px !important;
+  align-items: center;
+}
+
+.dataset-overview-columns > .column {
+  min-width: 0;
+}
+
+.dataset-panel-title {
+  font-size: 1.25rem !important;
+  margin-bottom: 22px !important;
+  text-align: center;
+}
+
+
+/* Dataset Diversity Figure */
+
+.dataset-diversity-panel {
+  text-align: center;
+  padding: 0 10px;
+}
+
+.dataset-diversity-img {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.dataset-caption {
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+
+/* Section Headings */
+
+.dataset-subtitle {
+  margin-top: 40px !important;
+  margin-bottom: 18px !important;
+}
+
+
+/* General Tables */
+
+.dataset-table {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.92rem;
+  background-color: transparent;
+}
+
+.dataset-table th {
+  text-align: center !important;
+  vertical-align: middle !important;
+  background-color: #f5f5f5;
+  color: #363636;
+  font-weight: 600;
+}
+
+.dataset-table td {
+  text-align: center;
+  vertical-align: middle !important;
+}
+
+.dataset-table th:first-child {
+  text-align: left !important;
+}
+
+.dataset-table td:first-child {
+  text-align: left;
+  font-weight: 500;
+}
+
+
+/* Video Statistics Table */
+
+.dataset-overview-columns .dataset-table th,
+.dataset-overview-columns .dataset-table td {
+  padding: 0.65em 0.5em;
+  white-space: nowrap;
+}
+
+
+/* Code Complexity Table */
+
+.complexity-table {
+  font-size: 0.85rem;
+  table-layout: auto;
+}
+
+.complexity-table th,
+.complexity-table td {
+  padding: 0.65em 0.35em !important;
+  white-space: nowrap;
+}
+
+.complexity-table th:first-child,
+.complexity-table td:first-child {
+  min-width: 105px;
+}
+
+
+/* Standard Deviation */
+
+.std-value {
+  font-size: 0.85em;
+  color: #777;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+
+/* Highlight AnimWeb-Bench Column */
+
+.complexity-table .ours-column {
+  background-color: #f2f2f2 !important;
+}
+
+.complexity-table th.ours-column {
+  font-weight: 700;
+}
+
+.complexity-table td.ours-column strong {
+  color: #363636;
+  font-weight: 700;
+}
+
+
+/* Table Note */
+
+.dataset-table-note {
+  font-size: 0.85rem;
+  color: #777;
+  text-align: center;
+  margin-top: 8px;
+  line-height: 1.6;
+}
+
+
+/* Expandable Animation Type Table */
+
+.animation-details {
+  margin-top: 20px;
+  border: 1px solid #dbdbdb;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.animation-details summary {
+  cursor: pointer;
+  padding: 15px 20px;
+  background-color: #f7f7f7;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #363636;
+  transition: background-color 0.2s ease;
+}
+
+.animation-details summary:hover {
+  background-color: #eeeeee;
+}
+
+.animation-details[open] summary {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.animation-table-container {
+  padding: 15px;
+}
+
+.animation-type-table {
+  margin-bottom: 0 !important;
+}
+
+.animation-type-table th:nth-child(2),
+.animation-type-table th:nth-child(4),
+.animation-type-table td:nth-child(2),
+.animation-type-table td:nth-child(4) {
+  width: 70px;
+  text-align: center !important;
+}
+
+
+/* =========================================
+   Mobile Responsive
+   ========================================= */
+
+@media screen and (max-width: 768px) {
+
+  .dataset-overview-columns {
+    margin-top: 20px;
+    margin-bottom: 25px !important;
+  }
+
+  .dataset-panel-title {
+    font-size: 1.2rem !important;
+  }
+
+  .dataset-diversity-panel {
+    margin-top: 20px;
+  }
+
+  .dataset-diversity-img {
+    max-width: 350px;
+  }
+
+  .dataset-subtitle {
+    margin-top: 30px !important;
+  }
+
+  .dataset-table {
+    font-size: 0.85rem;
+  }
+
+  .complexity-table {
+    font-size: 0.82rem;
+  }
+
+  .animation-table-container {
+    padding: 10px;
+  }
+
+}
+
+
+
+/* =========================================
+   AnimWeb-Bench Experimental Results
+   ========================================= */
+
+/* RQ Navigation */
+
+.experiment-tabs {
+  margin-top: 30px;
+  margin-bottom: 30px !important;
+}
+
+.experiment-tabs ul {
+  flex-wrap: wrap;
+}
+
+.experiment-tabs li a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #555;
+  padding: 12px 15px;
+  transition: background-color 0.2s ease,
+              color 0.2s ease;
+}
+
+.experiment-tabs li a:hover {
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+.experiment-tabs li.is-active a {
+  color: #222 !important;
+  border-bottom-color: white !important;
+  font-weight: 700;
+  background-color: #fff;
+}
+
+
+/* Experiment Panels */
+
+.experiment-panel {
+  margin-top: 25px;
+}
+
+.experiment-panel[hidden] {
+  display: none !important;
+}
+
+.experiment-title {
+  font-size: 1.3rem !important;
+  margin-bottom: 14px !important;
+}
+
+.experiment-question {
+  font-size: 1rem;
+  font-style: italic;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+
+/* Experiment Tables */
+
+.experiment-table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.experiment-table {
+  width: 100%;
+  text-align: center;
+  font-size: 0.82rem;
+  background-color: transparent;
+  margin-bottom: 0 !important;
+}
+
+.experiment-table th {
+  text-align: center !important;
+  vertical-align: middle !important;
+  white-space: nowrap;
+  font-weight: 600;
+  background-color: #f5f5f5;
+}
+
+.experiment-table td {
+  text-align: center;
+  vertical-align: middle !important;
+  white-space: nowrap;
+}
+
+.experiment-table th,
+.experiment-table td {
+  padding: 0.55em 0.35em !important;
+}
+
+.experiment-table th:first-child,
+.experiment-table td:first-child {
+  text-align: left !important;
+}
+
+/* Table Group Headers */
+
+.experiment-table .experiment-group-row td {
+  background-color: #eeeeee !important;
+  text-align: center !important;
+  font-style: italic;
+  font-weight: 600;
+  padding: 8px !important;
+}
+
+/* Static and Animation Metric Groups */
+
+.experiment-table .metric-group {
+  text-align: center !important;
+  background-color: #eeeeee;
+}
+
+
+/* RQ1 Main Results */
+
+.main-results-table {
+  font-size: 0.78rem;
+}
+
+/* Only apply model-column width to the actual model column */
+#experiments .main-results-table thead tr:first-child > th:first-child,
+#experiments .main-results-table tbody tr:not(.experiment-group-row) > td:first-child {
+  min-width: 180px;
+  padding-left: 10px !important;
+}
+
+/* Give all eight metric columns consistent widths */
+#experiments .main-results-table thead tr:nth-child(2) > th {
+  min-width: 75px;
+  width: 75px;
+  text-align: center !important;
+}
+
+.main-results-table td strong {
+  font-weight: 700;
+}
+
+.main-results-table td u {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+
+/* RQ3 Animation Results */
+
+.animation-results-table {
+  font-size: 0.85rem;
+}
+
+.animation-results-table th:first-child,
+.animation-results-table td:first-child {
+  min-width: 190px;
+}
+
+
+/* Experiment Figures */
+
+.experiment-figure {
+  text-align: center;
+  margin: 25px auto 20px;
+}
+
+.experiment-image {
+  display: block;
+  width: 100%;
+  max-width: 850px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.human-evaluation-image {
+  max-width: 700px;
+}
+
+
+/* Captions */
+
+/* .experiment-caption {
+  font-size: 0.88rem;
+  color: #666;
+  text-align: center;
+  line-height: 1.6;
+  margin-top: 12px;
+  margin-bottom: 20px;
+} */
+/* =========================================
+   Experiment Captions - RQ1 to RQ4
+   ========================================= */
+
+#experiments .experiment-caption {
+  font-size: 0.82rem !important;
+  color: #999 !important;
+  font-weight: 400 !important;
+  text-align: center;
+  line-height: 1.6;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
+/* Key Findings */
+
+.experiment-findings {
+  margin-top: 30px;
+  padding: 20px 25px;
+  background-color: #f7f7f7;
+  border-left: 3px solid #555;
+  border-radius: 3px;
+}
+
+.experiment-findings h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #363636;
+  margin-bottom: 16px;
+}
+
+.experiment-findings p {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  margin-bottom: 10px;
+  color: #363636;
+}
+
+.experiment-findings p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================
+   Responsive Design
+   ========================================= */
+
+@media screen and (max-width: 768px) {
+
+  .experiment-tabs {
+    overflow-x: auto;
+    margin-top: 20px;
+  }
+
+  .experiment-tabs ul {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .experiment-tabs li {
+    flex-shrink: 0;
+  }
+
+  .experiment-tabs li a {
+    font-size: 0.85rem;
+    padding: 10px 12px;
+  }
+
+  .experiment-title {
+    font-size: 1.2rem !important;
+  }
+
+  .experiment-table {
+    font-size: 0.75rem;
+  }
+
+  .experiment-figure {
+    margin-top: 20px;
+  }
+
+  .experiment-image {
+    max-width: 100%;
+  }
+
+  .experiment-findings {
+    padding: 18px 20px;
+  }
+
+  .experiment-findings p {
+    font-size: 0.92rem;
+  }
+
+}
+
+
+
+#experiments .experiment-card {
+  background: #fff;
+  border: 1px solid #e6e8ec;
+  border-radius: 10px;
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  margin-top: 25px;
+}
+
+#experiments .experiment-card-body {
+  padding: 24px 25px 30px;
+}
+
+/* Use the original LINE-style Bulma tabs, not is-boxed. */
+#experiments .experiment-tabs {
+  margin: 0 0 28px !important;
+}
+
+#experiments .experiment-tabs ul {
+  border-bottom: 1px solid #dbdbdb;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#experiments .experiment-tabs li a {
+  color: #4a4a4a;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 12px 16px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  background: transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+#experiments .experiment-tabs li a:hover {
+  color: #3273dc;
+  border-bottom-color: #b7d2f7;
+  background: transparent;
+}
+
+#experiments .experiment-tabs li.is-active a,
+#experiments .experiment-tabs li.is-active a:hover {
+  color: #3273dc !important;
+  border-bottom: 2px solid #3273dc !important;
+  background: transparent !important;
+  font-weight: 600;
+}
+
+#experiments .experiment-panel {
+  margin-top: 0;
+}
+
+#experiments .experiment-panel[hidden] {
+  display: none !important;
+}
+
+/* Preserve readable tables within the card. */
+#experiments .experiment-table-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 768px) {
+  #experiments .experiment-card-body {
+    padding: 15px 12px 22px;
+  }
+  #experiments .experiment-tabs ul {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  #experiments .experiment-tabs {
+    overflow-x: auto;
+  }
+  #experiments .experiment-tabs li {
+    flex-shrink: 0;
+  }
+  #experiments .experiment-tabs li a {
+    font-size: 0.85rem;
+    padding: 10px 12px;
+    white-space: nowrap;
+  }
+}
+
+/* =========================================
+   RQ1 & RQ3 Table Column Width Fix
+   ========================================= */
+
+/* Allow metric columns to have consistent widths */
+#experiments .main-results-table,
+#experiments .animation-results-table {
+  table-layout: fixed !important;
+  width: 100%;
+}
+
+/* Prevent old first-child rules from widening Structure */
+#experiments .main-results-table thead tr:nth-child(2) > th,
+#experiments .animation-results-table thead tr:nth-child(2) > th {
+  min-width: 75px !important;
+  width: 75px !important;
+  max-width: none !important;
+  padding: 8px 5px !important;
+  text-align: center !important;
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+}
+
+/* Only Model / Group should have a wider first column */
+#experiments .main-results-table thead tr:first-child > th:first-child,
+#experiments .main-results-table tbody tr:not(.experiment-group-row) > td:first-child {
+  min-width: 180px !important;
+  width: 180px;
+}
+
+#experiments .animation-results-table thead tr:first-child > th:first-child,
+#experiments .animation-results-table tbody tr:not(.experiment-group-row) > td:first-child {
+  min-width: 190px !important;
+  width: 190px;
+}
+
+/* Make all table headers consistent */
+#experiments .experiment-table thead th {
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  vertical-align: middle !important;
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   Code Complexity Table Column Width Fix
+   ========================================= */
+
+/* Use fixed column layout */
+#dataset-statistics .complexity-table {
+  width: 100% !important;
+  min-width: 760px;
+  table-layout: fixed !important;
+}
+
+/* First column: Metric */
+#dataset-statistics .complexity-table th:first-child,
+#dataset-statistics .complexity-table td:first-child {
+  width: 18% !important;
+  min-width: 0 !important;
+}
+
+/* Remaining five benchmark columns: equal widths */
+#dataset-statistics .complexity-table th:not(:first-child),
+#dataset-statistics .complexity-table td:not(:first-child) {
+  width: 16.4% !important;
+  min-width: 0 !important;
+}
+
+/* Unified cell alignment and spacing */
+#dataset-statistics .complexity-table th,
+#dataset-statistics .complexity-table td {
+  text-align: center !important;
+  vertical-align: middle !important;
+  padding: 10px 5px !important;
+}
+
+/* Keep metric names left-aligned */
+#dataset-statistics .complexity-table th:first-child,
+#dataset-statistics .complexity-table td:first-child {
+  text-align: left !important;
+  padding-left: 12px !important;
+}
+
+/* Prevent benchmark names from wrapping */
+#dataset-statistics .complexity-table th {
+  white-space: nowrap;
+  font-size: 0.85rem;
+}
+
+/* Standard deviation */
+#dataset-statistics .complexity-table .std-value {
+  display: inline-block;
+  color: #888;
+  font-size: 0.85em;
+  margin-top: 3px;
+}
+
+
+/* Center both Animation Type columns entirely */
+#dataset-statistics .animation-type-table th:nth-child(1),
+#dataset-statistics .animation-type-table td:nth-child(1),
+#dataset-statistics .animation-type-table th:nth-child(3),
+#dataset-statistics .animation-type-table td:nth-child(3) {
+  text-align: center !important;
+}
+
+
+/* =========================================
+   UI Component Detection and Tracking
+   ========================================= */
+
+#ui-component-tracking .tracking-card {
+  max-width: 650px;
+  margin: 25px auto 0;
+  padding: 25px 30px 20px;
+
+  background: #ffffff;
+  border: 1px solid #e6e8ec;
+  border-radius: 10px;
+
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.06);
+
+  text-align: center;
+}
+
+/* Video */
+
+#ui-component-tracking .tracking-video {
+  display: block;
+
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+
+  margin: 0 auto;
+
+  border-radius: 6px;
+  background-color: #f5f5f5;
+}
+
+/* Caption */
+
+#ui-component-tracking .tracking-caption {
+  font-size: 0.82rem;
+  color: #999;
+  line-height: 1.6;
+
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+
+  #ui-component-tracking .tracking-card {
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  #ui-component-tracking .tracking-video {
+    max-width: 100%;
+  }
+
+  #ui-component-tracking .tracking-caption {
+    font-size: 0.8rem;
+  }
+
+}
+
+
+/* =========================================
+   AnimWeb-Bench Interactive Findings
+   ========================================= */
+
+
+/* Findings Container */
+
+#experiments .experiment-findings {
+  margin-top: 28px;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+
+/* Individual Finding Card */
+
+#experiments .finding-item {
+  margin-bottom: 14px;
+
+  background: #ffffff;
+
+  border: 1px solid #e4e7eb;
+  border-radius: 8px;
+
+  overflow: hidden;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+/* Hover or Expanded Card */
+
+#experiments .finding-item:hover,
+#experiments .finding-item[open] {
+  border-color: #b8d4f5;
+
+  box-shadow:
+    0 3px 12px rgba(50, 115, 220, 0.07);
+}
+
+
+/* =========================================
+   Finding Title
+   ========================================= */
+
+#experiments .finding-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+
+  padding: 17px 22px;
+
+  background-color: #f7f8fa;
+
+  color: #363636;
+
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.6;
+
+  cursor: pointer;
+  list-style: none;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+
+/* Remove Browser Default Arrow */
+
+#experiments .finding-title::-webkit-details-marker {
+  display: none;
+}
+
+#experiments .finding-title::marker {
+  content: "";
+}
+
+
+/* Hover Title */
+
+#experiments .finding-item:hover .finding-title {
+  background-color: #f0f6ff;
+  color: #3273dc;
+}
+
+
+/* Expanded Title */
+
+#experiments .finding-item[open] .finding-title {
+  background-color: #edf4ff;
+
+  color: #3273dc;
+
+  border-bottom: 1px solid #d9e6f8;
+}
+
+
+/* =========================================
+   Expand Icon
+   ========================================= */
+
+#experiments .finding-icon {
+  position: relative;
+
+  width: 20px;
+  height: 20px;
+
+  flex-shrink: 0;
+}
+
+
+/* Horizontal Line */
+
+#experiments .finding-icon::before {
+  content: "";
+
+  position: absolute;
+
+  width: 12px;
+  height: 2px;
+
+  top: 9px;
+  left: 4px;
+
+  background-color: #888;
+  border-radius: 2px;
+}
+
+
+/* Vertical Line */
+
+#experiments .finding-icon::after {
+  content: "";
+
+  position: absolute;
+
+  width: 2px;
+  height: 12px;
+
+  top: 4px;
+  left: 9px;
+
+  background-color: #888;
+  border-radius: 2px;
+
+  transition: transform 0.25s ease;
+}
+
+
+/* Change + to - when expanded */
+
+#experiments .finding-item[open] .finding-icon::after {
+  transform: rotate(90deg);
+}
+
+
+/* Icon Color */
+
+#experiments .finding-item:hover .finding-icon::before,
+#experiments .finding-item:hover .finding-icon::after,
+#experiments .finding-item[open] .finding-icon::before,
+#experiments .finding-item[open] .finding-icon::after {
+  background-color: #3273dc;
+}
+
+
+/* =========================================
+   Finding Content
+   ========================================= */
+
+#experiments .finding-content {
+  padding: 20px 24px 22px;
+
+  background-color: #ffffff;
+}
+
+
+/* Body Text */
+
+#experiments .finding-content p {
+  font-size: 0.94rem;
+  font-weight: 400;
+
+  line-height: 1.8;
+
+  color: #555;
+
+  text-align: justify;
+
+  margin-bottom: 16px;
+}
+
+
+/* Last Paragraph */
+
+#experiments .finding-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================
+   Mobile Responsive
+   ========================================= */
+
+@media screen and (max-width: 768px) {
+
+  #experiments .finding-title {
+    padding: 15px 16px;
+
+    font-size: 0.94rem;
+    line-height: 1.55;
+  }
+
+  #experiments .finding-content {
+    padding: 17px 18px;
+  }
+
+  #experiments .finding-content p {
+    font-size: 0.9rem;
+    line-height: 1.75;
+    text-align: left;
+  }
+
+  #experiments .finding-item {
+    margin-bottom: 12px;
+  }
+
+}
+
+
+/* RQ3 Animation Category Description Only */
+#rq3 .experiment-description {
+  max-width: 85%;
+  margin: 12px auto 20px;
+}
+
+#rq3 .experiment-description p {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: #666;
+  text-align: justify;
+}
+
+#rq3 .experiment-description em {
+  font-weight: 500;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  #rq3 .experiment-description {
+    max-width: 100%;
+  }
+
+  #rq3 .experiment-description p {
+    font-size: 0.82rem;
+    line-height: 1.65;
+    text-align: left;
+  }
+}
+
+/* =========================================
+   RQ1 Table Column Widths
+   ========================================= */
+
+/* Keep the table width fixed */
+#rq1 .main-results-table {
+  width: 100% !important;
+  table-layout: fixed !important;
+}
+
+/* Model column: 24% */
+#rq1 .main-results-table thead tr:first-child > th:first-child,
+#rq1 .main-results-table tbody td:first-child {
+  width: 24% !important;
+  min-width: 0 !important;
+}
+
+/* Other 8 metric columns: 9.5% each */
+#rq1 .main-results-table thead tr:nth-child(2) > th,
+#rq1 .main-results-table tbody td:not(:first-child) {
+  width: 9.5% !important;
+  min-width: 0 !important;
+}
+
+/* Allow long model names to wrap if necessary */
+#rq1 .main-results-table tbody td:first-child {
+  white-space: normal !important;
+  overflow-wrap: break-word;
+  line-height: 1.5;
+}
+
+/* Disabled Paper Button */
+.publication-links .paper-disabled {
+  background-color: #d9d9d9 !important;
+  color: #888 !important;
+  border-color: #d9d9d9 !important;
+  cursor: not-allowed !important;
+  pointer-events: none;
+  opacity: 1;
+}
