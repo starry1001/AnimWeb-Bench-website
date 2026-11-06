@@ -57,10 +57,12 @@
   margin: 10px 10px;
 }
 html, body {
-  height: 100%;
+  min-height: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* 防止水平滚动 */
+  /* Clip horizontal overflow without creating a nested scroll container. */
+  overflow-x: clip;
 }
 
 /* 创建一个类来设置背景图片和文字 */
